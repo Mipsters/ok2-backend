@@ -65,10 +65,11 @@ class OkUser(AbstractBaseUser):
         return True
 
     def getUserResponse(self, token):
-        return {'token': token,
-                'username': self.username,
-                'firstName': self.first_name,
-                'lastName': self.last_name,
-                'email': self.email,
-                'isActive': self.is_active,
-                }
+        return {
+            'token': token,
+            'username': self.username,
+            'firstName': self.first_name,
+            'lastName': self.last_name,
+            'email': self.email,
+            'isActive': self.is_active,
+        }
