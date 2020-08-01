@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'parliament_tools',
     'one_minute_speeches',
     'takanon',
+    'law_suggestion',
     'accounts'
 ]
 
